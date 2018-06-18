@@ -1,0 +1,11 @@
+all:FINAL EXECUTION
+
+projet.o: projet.c projet.h
+		gcc -c Wall projet.c 
+main.o: main.c projet.h
+		gcc -c Wall main.c
+FINAL: projet.o main.o
+		gcc -o FINAL projet.o main.o
+
+EXECUTION :
+		./FINAL
